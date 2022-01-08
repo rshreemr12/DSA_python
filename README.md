@@ -14,7 +14,7 @@ while we could use techniques for better CRUD.
 <br>
 ### Linear Search :
 if we want to search any element in the given list, we try to compare the target number with the rest of elements.
-<br>
+</br>
 `nums = [9,8,7,6,5,4,3,2,1]`
 
 if the target is 6
@@ -23,36 +23,58 @@ we end up doing 4 iterations
 lets consider worst case scenario.
 target = 1
 number of iterations needed is 9 which is len(nums)
+<br>
 For any given list finding a element uisng linear search is O(N) making its time complexity
+<br>
 space consumed to check the target number is O(1)
+<br>
 
 
 ### Binary Search :
 Let's try to improve the complexity or make it better efficient.
+<br>
 `nums = [9,8,7,6,5,4,3,2,1]`
-
-target= 5
+<br>
+`target= 5`
+<br>
 Applying binary search to this, our target is right in the middle of the list
 In binary Serch algorithm we traverse through the list based on a criterion. 
 2 simple steps to land into the result
-> divide the list by 2 call it mid
+<br>
+>  divide the list by 2 call it mid
+>  <br>
 >  if mid number is target return the target
+>  <br>
 >  if mid number is less than the target, traverse to left. So highest possible traversal in this case is position of mid-1
+>  <br>
 >  if mid number is greater than the target, traverse to right. So start from the position mid+1
+>  <br>
 
 lets put it all together.
+<br>
 `target = 6 `
+<br>
 `nums = [9,8,7,6,5,4,3,2,1]`
+<br>
 
-binary_serach(nums, target):
-  hi, lo = 0, len(nums)
-  mid = (lo+hi)// 2
-  if mid>0 and nums[mid]==target:
-    return target
-  elif target < nums[mid-1]:
-    hi = mid-1
-  elif target > nums[mid+1]:
-    lo = mid+1
+`binary_serach(nums, target):`
+<br>
+  `hi, lo = 0, len(nums)`
+  <br>
+  `mid = (lo+hi)// 2`
+  <br>
+  `if mid>0 and nums[mid]==target:`
+  <br>
+    `return target`
+    <br>
+  `elif target < nums[mid-1]:`
+  <br>
+    `hi = mid-1`
+    <br>
+  `elif target > nums[mid+1]:`
+  <br>
+    `lo = mid+1`
+    <br>
 
 
 
