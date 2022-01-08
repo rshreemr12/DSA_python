@@ -12,7 +12,7 @@ User experience will be pretty bad if it takes 10s just to load up the landing p
 With latest possible techniques of cloud (AWS or Azure). Even with scaling it with more cores and Ram we will end up costing more money
 while we could use techniques for better CRUD. 
 
-Linear Search :
+#### Linear Search :
 if we want to search any element in the given list, we try to compare the target number with the rest of elements.
 `nums = [9,8,7,6,5,4,3,2,1]`
 
